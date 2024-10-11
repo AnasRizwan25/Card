@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '320px',
+          // => @media (min-width: 640px) { ... }
+
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
+        },
+        extend: {
+          colors: {
+            // hcolor: 'pink',
+            // 'white': 'purple'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="max-w-screen-2xl mx-auto flex sm:flex-col lg:flex-row gap-[30px] px-5 py-5 pb-[20px]">
+    <div class="basis-[45%]">
+      <img class="w-full rounded-[10px]" src="./pic.jpeg" alt="flower picture">
+    </div>
+    <div class="basis-[55%]">
+      <h1 class="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, saepe!</h1>
+      <p class="text-xl py-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, totam.</p>
+      <p class="text-xl py-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, totam.</p>
+      <p class="text-xl py-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, totam.</p>
+      <p class="text-xl py-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, totam.</p>
+    </div>
+  </div>
+
+
+  <div class="max-w-screen-2xl text-3xl mx-auto text-center py-5">
+    <h1>Featured Products</h1>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto text-center py-5 grid md:grid-cols-2 lg:grid-cols-4 gap-5 px-5">
+
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+    <div class="shadow-lg rounded-[6px]">
+      <div class="overflow-hidden">
+        <img class="hover:scale-125 duration-500" src="./clothpic.webp">
+      </div>
+      <h3 class="py-2">Mens Cloth</h3>
+      <p class="py-2">Price: 9000$</p>
+    </div>
+
+  </div>
+
+  <div class="max-w-screen-2xl text-3xl mx-auto text-center py-4">
+    <h1>Our Services</h1>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto text-center grid lg:grid-cols-4 md:grid-cols-2 gap-5 p-10">
+
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+    <div class="hover:bg-blue-500 hover:text-white p-[15px] rounded-[2px] shadow-xl">
+      <img class="animate-bounce mx-auto" width="25" src="./computer-solid.svg">
+      <h3 class="py-2 text-xl">Web Design</h3>
+      <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Speriores assumenda nisi in rerum
+        accusamus!</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
